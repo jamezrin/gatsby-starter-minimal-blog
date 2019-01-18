@@ -24,4 +24,5 @@ module.exports = {
   backgroundColor: '#2b2e3c',
 
   gaTrackingId: 'UA-132718222-1',
+  disqusShortname: 'personal-blog-v96uffbbqr',
 }

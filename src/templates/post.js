@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import kebabCase from 'lodash/kebabCase'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 
-import { Layout, Wrapper, Header, Subline, SEO, PrevNext } from '../components'
+import { Layout, Wrapper, Header, Subline, SEO, PrevNext, Disqus } from '../components'
 import config from '../../config'
 
 const Content = styled.article`
@@ -70,6 +70,7 @@ const Post = ({ pageContext: { slug, prev, next }, data: { mdx: postNode } }) =>
             <MDXRenderer>{postNode.code.body}</MDXRenderer>
           </PostContent>
           <PrevNext prev={prev} next={next} />
+          <Disqus postPath={slug} postNode={postNode} />
         </Content>
       </Wrapper>
     </Layout>

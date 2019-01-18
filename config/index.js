@@ -22,4 +22,6 @@ module.exports = {
   // See: https://developers.google.com/web/fundamentals/web-app-manifest/
   themeColor: '#3498DB',
   backgroundColor: '#2b2e3c',
+
+  gaTrackingId: 'UA-132718222-1',
 }
